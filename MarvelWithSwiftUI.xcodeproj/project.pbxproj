@@ -6,13 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		770C8A682CCD47B0002C16DF /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 770C8A672CCD47B0002C16DF /* SDWebImageSwiftUI */; };
+		770C8A752CCE1514002C16DF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 770C8A742CCE1514002C16DF /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		770C8A4D2CC97DD8002C16DF /* MarvelWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		770C8A922CCE36DE002C16DF /* Exceptions for "MarvelWithSwiftUI" folder in "MarvelWithSwiftUI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 770C8A4C2CC97DD8002C16DF /* MarvelWithSwiftUI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		770C8A4F2CC97DD8002C16DF /* MarvelWithSwiftUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				770C8A922CCE36DE002C16DF /* Exceptions for "MarvelWithSwiftUI" folder in "MarvelWithSwiftUI" target */,
+			);
 			path = MarvelWithSwiftUI;
 			sourceTree = "<group>";
 		};
@@ -23,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770C8A682CCD47B0002C16DF /* SDWebImageSwiftUI in Frameworks */,
+				770C8A752CCE1514002C16DF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +85,8 @@
 			);
 			name = MarvelWithSwiftUI;
 			packageProductDependencies = (
+				770C8A672CCD47B0002C16DF /* SDWebImageSwiftUI */,
+				770C8A742CCE1514002C16DF /* Alamofire */,
 			);
 			productName = MarvelWithSwiftUI;
 			productReference = 770C8A4D2CC97DD8002C16DF /* MarvelWithSwiftUI.app */;
@@ -94,6 +116,10 @@
 			);
 			mainGroup = 770C8A442CC97DD8002C16DF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				770C8A662CCD47B0002C16DF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				770C8A732CCE1514002C16DF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 770C8A4E2CC97DD8002C16DF /* Products */;
 			projectDirPath = "";
@@ -252,6 +278,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarvelWithSwiftUI/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -291,6 +318,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarvelWithSwiftUI/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -339,6 +367,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		770C8A662CCD47B0002C16DF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
+		770C8A732CCE1514002C16DF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		770C8A672CCD47B0002C16DF /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 770C8A662CCD47B0002C16DF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		770C8A742CCE1514002C16DF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 770C8A732CCE1514002C16DF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 770C8A452CC97DD8002C16DF /* Project object */;
 }

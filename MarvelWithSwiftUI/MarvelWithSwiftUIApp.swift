@@ -11,7 +11,10 @@ import SwiftUI
 struct MarvelWithSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let repository = AllCharactersRepository()
+            let useCase = AllCharactersUsecases(repository: repository)
+            let viewModel = AllCharactersViewModel(allCharactersUseCase: useCase)
+            AllCharactersScreen(viewModel: viewModel)
         }
     }
 }
